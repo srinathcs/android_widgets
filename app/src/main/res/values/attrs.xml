@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CardTextView">
+        <attr name="title" format="string"/>
+        <attr name="name" format="string"/>
+        <attr name="address" format="string"/>
+        <attr name="age" format="integer"/>
+        <attr name="state" format="string"/>
+        <attr name="city" format="string"/>
+        <attr name="indian" format="boolean"/>
+
+    </declare-styleable>
+
+</resources>
