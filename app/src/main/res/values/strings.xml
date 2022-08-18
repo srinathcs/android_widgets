@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">com.custom.widgets</string>
+    <string name="tvSetText"> Arial </string>
 </resources>
