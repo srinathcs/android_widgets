@@ -6,13 +6,21 @@
     android:layout_width="match_parent"
     android:layout_height="150dp"
     app:cardUseCompatPadding="true"
+    android:orientation="vertical"
     >
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvTextWidget"
+        android:id="@+id/tvTextTitle"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="@string/tvTextWidget" />
+        android:text="@string/tvTextTitle" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTextDescription"
+        android:gravity="center"
+        android:text="@string/tvTextDescription"/>
+
 
 </com.google.android.material.card.MaterialCardView>

@@ -1,6 +1,4 @@
 package com.custom.widgets.cardTextWidget;
-
-
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -20,11 +18,9 @@ public class CardTestWidget extends LinearLayout {
     public CardTestWidget(Context mContext) {
         this(mContext,null);
     }
-
     public CardTestWidget(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs,0);
     }
-
     public CardTestWidget(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         this.mContext =context;
@@ -34,8 +30,7 @@ public class CardTestWidget extends LinearLayout {
         LayoutInflater inflater=LayoutInflater.from(mContext);
         View mView = inflater.inflate(R.layout.activity_card_text_widget,this,true);
         cardView=mView.findViewById(R.id.mcvId);
-        textView=mView.findViewById(R.id.tvTextWidget);
+        textView=mView.findViewById(R.id.tvTextTitle);
         cardView.setRadius(70f);
     }
-
 }
