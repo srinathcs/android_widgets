@@ -1,5 +1,6 @@
 package com.custom.widgets;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -16,7 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
     private Button bt;
     private EditText editText;
-    private TextView myTextView;
+    private TextView myTextView ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         onTextSetup();
         onEditSetup();
         onSetupEvent();
+
     }
 
     private void initViews(){
@@ -54,7 +57,8 @@ public class MainActivity extends AppCompatActivity {
         myTextView.setTextSize(50);
         myTextView.setBackgroundColor(myTextView.getResources().getColor(R.color.black));
     }
-    private void onEditSetup(){
+    private void onEditSetup()
+    {
         editText.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD_ITALIC));
         editText.setTextColor(Color.BLUE);
         editText.setTextSize(25);
