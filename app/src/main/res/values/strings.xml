@@ -2,5 +2,8 @@
     <string name="app_name">com.custom.widgets</string>
     <string name="tvSetText"> Arial </string>
     <string name="tvTextTitle"> Text Widget </string>
-    <string name="tvTextDescription"> Text Widget </string>
+    <string name="etTextDescription"> Enter Your Name</string>
+    <string name="ivpic"> Text Widget </string>
+    <string name="tvAll"> Enter Your Name </string>
+    <string name="etAll"> Your Name </string>
 </resources>
