@@ -1,5 +1,7 @@
 package com.custom.widgets;
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -18,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText editText;
     private TextView myTextView;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,19 +30,20 @@ public class MainActivity extends AppCompatActivity {
         onTextSetup();
         onEditSetup();
         onSetupEvent();
+
     }
 
-    private void initViews(){
-        bt=findViewById(R.id.btnSimple);
-        editText=findViewById(R.id.etText);
+    private void initViews() {
+        bt = findViewById(R.id.btnSimple);
+        editText = findViewById(R.id.etText);
         myTextView = findViewById(R.id.tvSetText);
     }
 
-    private void onButtonSetup(){
+    private void onButtonSetup() {
         bt.setBackgroundTintList(getResources().getColorStateList(R.color.button_background));
         bt.setText("new");
-        Drawable img = bt.getContext().getResources().getDrawable( R.drawable.ic_launcher_foreground );
-        bt.setCompoundDrawablesWithIntrinsicBounds( null, null, img, null);
+        Drawable img = bt.getContext().getResources().getDrawable(R.drawable.ic_launcher_foreground);
+        bt.setCompoundDrawablesWithIntrinsicBounds(null, null, img, null);
         bt.setTextColor(0xffff0000);
         bt.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD_ITALIC));
         GradientDrawable shape = new GradientDrawable();
@@ -47,25 +51,26 @@ public class MainActivity extends AppCompatActivity {
         bt.setBackgroundDrawable(shape);
     }
 
-    private void onTextSetup(){
+    private void onTextSetup() {
         myTextView.setText(R.string.tvSetText);
         myTextView = findViewById(R.id.tvSetText);
         myTextView.setTextColor(myTextView.getResources().getColor(R.color.teal_700));
         myTextView.setTextSize(50);
         myTextView.setBackgroundColor(myTextView.getResources().getColor(R.color.black));
     }
-    private void onEditSetup(){
+
+    private void onEditSetup() {
         editText.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD_ITALIC));
         editText.setTextColor(Color.BLUE);
         editText.setTextSize(25);
 
     }
 
-    private void onSetupEvent(){
+    private void onSetupEvent() {
         myTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Hai",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Hai", Toast.LENGTH_SHORT).show();
             }
         });
     }
