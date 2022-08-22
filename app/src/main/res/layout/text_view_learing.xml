@@ -4,31 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_height="match_parent">
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvSetText"
-        android:fontFamily="@font/alumni"
-        android:clickable="true"/>
-
-
-    <androidx.appcompat.widget.AppCompatTextView
+    <com.custom.widgets.whatsapp.settings.UserShotInfo
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Arial"
-        android:clickable="true"/>
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnSimple"
-        android:layout_gravity="center" />
-    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usiwInfo"/>
+    <com.custom.widgets.whatsapp.settings.UserShotInfo
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-    </com.google.android.material.textfield.TextInputLayout>
+        android:id="@+id/usiwInfo1"/>
+
 </androidx.appcompat.widget.LinearLayoutCompat>

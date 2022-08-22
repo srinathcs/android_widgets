@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">com.custom.widgets</string>
     <string name="tvSetText"> Arial </string>
+    <string name="tvTitle"> SRINATH </string>
+    <string name="tvTitleD"> Account </string>
+    <string name="tvDescription"> Rest at the end not in the middl.. </string>
+    <string name="tvDescriptionD"> Privacy,security,change number </string>
 </resources>
